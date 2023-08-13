@@ -1,0 +1,51 @@
+* {
+  border-radius: 12px;
+}
+body {
+  background-image: linear-gradient(#16384c, rgb(47, 50, 95), #2f495f);
+
+  min-height: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+section {
+  background-color: #ffff;
+  width: 400px;
+  height: 350px;
+  margin: 200px auto 0 auto;
+  position: relative;
+  transition: all 0.5s;
+}
+
+section:hover {
+  height: 400px;
+}
+img {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50px;
+  top: -30px;
+  position: relative;
+  transition: all 0.5s;
+}
+img:hover {
+  position: absolute;
+}
+
+div {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.4s;
+}
+section:hover div {
+  opacity: 1;
+}
+section:hover img {
+  top: -100px;
+  border-radius: 50%;
+  transform: rotate(720deg);
+}
